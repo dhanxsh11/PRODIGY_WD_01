@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background for gaming theme */
+    color: #fff; /* White text color */
+}
+
+nav {
+    background-color: #ff0000; /* Bright red background for gaming theme */
+    width: 100%; /* Full width */
+    position: fixed; /* Fix to the top */
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,.8);
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.title {
+    color: #fff; /* White text */
+    font-size: 24px; /* Increased font size */
+    margin: 0; /* Remove default margin */
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    gap: 10px; /* Space between buttons */
+}
+
+.menu button {
+    background-color: #333; /* Dark background for buttons */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0; /* Remove margin */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+    border-radius: 15px; /* Add curved edges to buttons */
+    font-size: 16px; /* Increase font size */
+}
+
+.menu button:hover {
+    background-color: #fff; /* White background on hover */
+    color: #ff0000; /* Red text on hover */
+}
+
+.container {
+    margin-top: 70px; /* Space for the fixed navbar */
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.main {
+    display: flex; /* Display flex to arrange items in a row */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Space between text and image */
+}
+
+.main .text {
+    flex: 1;
+}
+
+.main .text h1 {
+    font-size: 60px; /* Large font for main title */
+}
+
+.main .image {
+    flex: 1;
+}
+
+.main .image img {
+    width: 100%; /* Adjust width as needed */
+    height: auto;
+    border-radius: 10px; /* Add some rounding to image corners */
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+    justify-content: flex-start; /* Align content to start */
+    height: 100vh; /* Set the height of the container to the full viewport height */
+    text-align: center;
+    gap: 20px; /* Space between game sections */
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    background-color: #333; /* Dark background for game sections */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Width of game sections */
+}
+
+.game img {
+    width: 150px; /* Fixed width for game images */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.game-info {
+    text-align: left; /* Align text to the left */
+}
+
+.game-info h2 {
+    margin: 0;
+    font-size: 24px; /* Increase font size for game titles */
+}
+
+.game-info p {
+    margin: 10px 0 0; /* Space above the paragraph */
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+    justify-content: flex-start; /* Align content to start */
+    height: 100vh; /* Set the height of the container to the full viewport height */
+    text-align: center;
+    gap: 20px; /* Space between news items */
+}
+
+.news-item {
+    background-color: #333; /* Dark background for news items */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Width of news items */
+    text-align: left; /* Align text to the left */
+}
+
+.news-item h2 {
+    margin: 0;
+    font-size: 24px; /* Increase font size for news titles */
+}
+
+.news-item p {
+    margin: 10px 0 0; /* Space above the paragraph */
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100vh; /* Set the height of the container to the full viewport height */
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px; /* Limit width of about text */
+    margin: 20px auto;
+    line-height: 1.6; /* Improve readability */
+}
